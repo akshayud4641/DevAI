@@ -1,0 +1,7 @@
+<ion-content>
+    @if(isNewChat) {
+       <div class="new-chat-content">
+            <app-prompt-input style="width: 100%;" (sendMessageEvent)="askAI($event)"></app-prompt-input>
+       </div>
+    }
+</ion-content>  

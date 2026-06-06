@@ -1,0 +1,18 @@
+<div class="chat-input-container">
+  <button class="icon-btn">
+    <i class="fa-solid fa-plus"></i>
+  </button>
+  <textarea
+    [(ngModel)]="message"
+    placeholder="What Can I Develop For You Today?"
+    (keyup.enter)="sendMessage()"
+    (input)="autoResize($event)"
+    rows="1"
+  ></textarea>
+  <button class="icon-btn" (click)="sendMessage()">
+    <i class="fa-solid fa-microphone"></i>
+  </button>
+</div>
+<div class="hint-text">
+  AI-generated content may be incorrect
+</div>

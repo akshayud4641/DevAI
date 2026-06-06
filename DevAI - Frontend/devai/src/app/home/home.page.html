@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img width="150vh" src="../../assets/logo/DevAI_Logo_Med.png">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <a mat-button (click)="isNewChat = true">
+      <i class="fa fa-pencil"></i>
+      New Chat
+    </a>
+    Chat History
+    <hr class="h-l">
+    <app-side-chat-history></app-side-chat-history>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-conversations [isNewChat]="isNewChat" [chatId]="''"></app-conversations>
+  </mat-sidenav-content>
+</mat-sidenav-container>

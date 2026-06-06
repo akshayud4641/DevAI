@@ -1,0 +1,54 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 220px;
+  padding: 15px;
+  background: #1e1e2f;
+  color: white;
+}
+
+mat-sidenav a {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  padding: 16px;
+}
+
+.h-l {
+  height: 1px;
+  background-color: #fff;
+}
